@@ -1,8 +1,6 @@
 # loco
 
-**Warning: This project is no longer maintained.** Also, note that this project is written against Choco 3, not Choco 4.
-
-![CircleCI build status](https://circleci.com/gh/aengelberg/loco.png?circle-token=056c1eb8765d2e4e2cdfa0a0c143eee009ef172f)
+> **Note**: This is fork is a revival of [Alex Engelberg's excellent library](https://github.com/aengelberg/loco). [@mortenschioler](https://github.com/mortenschioler) is the maintainer. PRs and issues welcome!
 
 Loco is a *Constraint Programming* library for Clojure.  Loco provides a fully *declarative, functional interface* to the Java library Choco.
 
@@ -448,17 +446,19 @@ automata, which Loco provides like so:
 
 ## About Loco
 
-Loco was born out of a desire to create a constraint solver that would improve upon core.logic by leveraging an existing Java constraint library to provide better performance and a wider range of constraints.  The first iteration, [CloCoP](http://github.com/aengelberg/clocop), was based upon the JaCoP library, and introduced the "piping" operators, i.e., nested constraints which automatically produce other internal variables.
+In the words of the original Author [@aengelberg](https://github.com/aengelberg):
 
-Shortly after announcing CloCoP, I discovered the Choco library. Choco has a couple of features that makes it slightly better than JaCoP for this situation, such as lazy evaluation of multiple solutions, so I decided to create a new version of CloCoP based on Choco.  Along the way, I took this as an opportunity to experiment with the modeling API, and eventually moved to a purely declarative approach.  The new API was sufficiently different from CloCoP that it warranted a new name: Loco.
+> Loco was born out of a desire to create a constraint solver that would improve upon core.logic by leveraging an existing Java constraint library to provide better performance and a wider range of constraints. The first iteration, CloCoP, was based upon the JaCoP library, and introduced the "piping" operators, i.e., nested constraints which automatically produce other internal variables.
+>
+> Shortly after announcing CloCoP, I discovered the Choco library. Choco has a couple of features that makes it slightly better than JaCoP for this situation, such as lazy evaluation of multiple solutions, so I decided to create a new version of CloCoP based on Choco. Along the way, I took this as an opportunity to experiment with the modeling API, and eventually moved to a purely declarative approach. The new API was sufficiently different from CloCoP that it warranted a new name: Loco.
 
 ## Credits
 
-Alex Engelberg is the author and maintainer of the Loco library.  Issues, examples, and pull requests are welcome.
+[Alex Engelberg](https://github.com/aengelberg) is the original author and of the Loco library. [Morten Emmanuel Schiøler](https://github.com/mortenschioler) is the maintainer of this fork (per March 2023). Issues, examples, and pull requests are welcome.
 
 Thanks to [Andrea Richiardi](https://github.com/arichiardi) for contributing Loco solutions for sample Constraint Programming problems. His examples can be found in the test directory.
 
-Also, thanks to the Seattle Clojure group (Seajure), who listened as I explained an early iteration of Loco and nudged me in the direction of being fully declarative.
+Also, thanks to the Seattle Clojure group (Seajure), who listened as the original author explained an early iteration of Loco and nudged it in the direction of being fully declarative.
 
 Special thanks to Charles Prud'homme, a maintainer of Choco, for permission to create a Clojure spin-off, as well as additional guidance with some Choco features.
 
