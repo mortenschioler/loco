@@ -1,10 +1,17 @@
 # loco
 
+<p>
+<a href="https://clojars.org/io.github.mortenschioler/loco">
+  <img alt="Clojars project" src="https://img.shields.io/clojars/v/io.github.mortenschioler/loco.svg" />
+</a>
+<a href="https://github.com/mortenschioler/loco/releases/tag/latest">
+  <img alt="Latest release version" src="https://img.shields.io/github/v/release/mortenschioler/loco?display_name=tag" />
+</a>
+</p>
+
 > **Note**: This is fork is a revival of [Alex Engelberg's excellent library](https://github.com/aengelberg/loco). [@mortenschioler](https://github.com/mortenschioler) is the maintainer. PRs and issues welcome!
 
 Loco is a *Constraint Programming* library for Clojure.  Loco provides a fully *declarative, functional interface* to the Java library Choco.
-
-    [loco "0.3.1"]
 
 Loco requires JDK 8.
 
