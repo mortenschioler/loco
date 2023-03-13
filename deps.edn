@@ -8,12 +8,9 @@
 
  :aliases
  {
-  ;; Runs with 'clj -X:build pipeline :lib io.github.mortenschioler/loco' in pipeline.
-  ;; Clojars credentials are taken from environment vars, and the version is taken from the tag at HEAD.
+  ;; See automatic pipeline in .github/workflows/publish_on_release
   :build {:replace-paths ["build"]
-          :replace-deps {; Just use the installed Clojure version for max speed. clojure version is defined in root.
-                         ; Will be >= 1.10 since the alias must have been invoked with clj. tools.build & pomegranate
-                         ; are very compatible with old clojure versions.
+          :replace-deps {; Just use the installed Clojure version for max speed.
                          #_#_org.clojure/clojure {:mvn/version "1.11.1"}
                          io.github.clojure/tools.build {:git/tag "v0.9.3" :git/sha "e537cd1"}
                          clj-commons/pomegranate {:mvn/version "1.2.23"}}
