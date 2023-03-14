@@ -35,7 +35,7 @@ jobs:
 
       - name: Build pipeline
         run: >-
-          clojure -X:build pipeline :lib io.github.mortenschioler/foo :version '"${{github.ref_name}}"'
+          clojure -X:build pipeline :lib io.github.mortenschioler/loco :version '"${{github.ref_name}}"'
         env:
           CLOJARS_USERNAME: ${{secrets.CLOJARS_USERNAME}}
           CLOJARS_PASSWORD: ${{secrets.CLOJARS_PASSWORD}}
