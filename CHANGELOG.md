@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.2
+- upgraded choco from 3.3.0 to 3.3.3
+
 ## 0.3.1
 - added namespace `loco.automata` for creating FiniteAutomaton objects
 - replaced `$regex` with more general-purpose `$regular`
