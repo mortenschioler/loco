@@ -4,7 +4,7 @@
 <a href="https://clojars.org/io.github.mortenschioler/loco">
   <img alt="Clojars project" src="https://img.shields.io/clojars/v/io.github.mortenschioler/loco.svg" />
 </a>
-<a href="https://github.com/mortenschioler/loco/releases/tag/latest">
+<a href="https://github.com/mortenschioler/loco/releases/latest">
   <img alt="Latest release version" src="https://img.shields.io/github/v/release/mortenschioler/loco?display_name=tag" />
 </a>
 </p>
