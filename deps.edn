@@ -3,7 +3,7 @@
  :deps
  {
   org.clojure/clojure {:mvn/version "1.7.0"}
-  org.choco-solver/choco-solver {:mvn/version "3.3.0"}
+  org.choco-solver/choco-solver {:mvn/version "3.3.3"}
   }
 
  :aliases
